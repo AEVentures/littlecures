@@ -58,9 +58,9 @@ pnpm test
 
 ## Deploy
 
-The easiest way to go live is to connect the GitHub repository to [Vercel](https://vercel.com). It will automatically build and deploy the `dist` directory on every push to `main`.
+The live site is at https://littlecures.org/ and is hosted on GitHub Pages. Pushes to `main` trigger the `.github/workflows/deploy.yml` action, which builds and deploys automatically.
 
-For other platforms, run `pnpm build` and serve the `dist/` directory.
+You can also run `pnpm build` and serve the `dist/` directory on any static host.
 
 ## Contribute
 

@@ -4,7 +4,7 @@ This document has copy and links you can use to invite contributors to LittleCur
 
 ## Live links
 
-- **Website:** `https://plasmaraygun.github.io/littlecures/`
+- **Website:** `https://littlecures.org/`
 - **Repository:** `https://github.com/plasmaraygun/littlecures`
 - **White paper:** `https://github.com/plasmaraygun/littlecures/blob/main/docs/WHITEPAPER.md`
 - **Roadmap:** `https://github.com/plasmaraygun/littlecures/blob/main/docs/ROADMAP.md`
@@ -18,7 +18,7 @@ This document has copy and links you can use to invite contributors to LittleCur
 > If you have ML, engineering, data, design, or clinical expertise, we need you. The repo is public, the roadmap is clear, and the work is patient-first.
 >
 > Repo: https://github.com/plasmaraygun/littlecures
-> Site: https://plasmaraygun.github.io/littlecures/
+> Site: https://littlecures.org/
 
 ### For rare disease and cancer advocates
 
@@ -45,6 +45,6 @@ This document has copy and links you can use to invite contributors to LittleCur
 
 ## Notes
 
-- The current live repo is under `plasmaraygun`. This is a starting point. The repo can be transferred to an organization later.
+- The site is live at https://littlecures.org/. The repository is currently under `plasmaraygun` and can be transferred to an organization later without changing the domain.
 - All code is MIT licensed. All documentation is public.
 - We do not collect patient data.
