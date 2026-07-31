@@ -5,9 +5,9 @@ This document has copy and links you can use to invite contributors to LittleCur
 ## Live links
 
 - **Website:** `https://littlecures.org/`
-- **Repository:** `https://github.com/plasmaraygun/littlecures`
-- **White paper:** `https://github.com/plasmaraygun/littlecures/blob/main/docs/WHITEPAPER.md`
-- **Roadmap:** `https://github.com/plasmaraygun/littlecures/blob/main/docs/ROADMAP.md`
+- **Repository:** `https://github.com/AEVentures/littlecures`
+- **White paper:** `https://github.com/AEVentures/littlecures/blob/main/docs/WHITEPAPER.md`
+- **Roadmap:** `https://github.com/AEVentures/littlecures/blob/main/docs/ROADMAP.md`
 
 ## Share copy
 
@@ -17,7 +17,7 @@ This document has copy and links you can use to invite contributors to LittleCur
 >
 > If you have ML, engineering, data, design, or clinical expertise, we need you. The repo is public, the roadmap is clear, and the work is patient-first.
 >
-> Repo: https://github.com/plasmaraygun/littlecures
+> Repo: https://github.com/AEVentures/littlecures
 > Site: https://littlecures.org/
 
 ### For rare disease and cancer advocates
@@ -26,7 +26,7 @@ This document has copy and links you can use to invite contributors to LittleCur
 >
 > We need engineers, clinicians, researchers, designers, and advocates. If you know someone who could help, please share.
 >
-> Repo: https://github.com/plasmaraygun/littlecures
+> Repo: https://github.com/AEVentures/littlecures
 
 ### For clinical / research networks
 
@@ -34,7 +34,7 @@ This document has copy and links you can use to invite contributors to LittleCur
 >
 > We are looking for clinical advisors, oncology researchers, bioinformaticians, and data scientists to keep the tools accurate and useful.
 >
-> Read the white paper: https://github.com/plasmaraygun/littlecures/blob/main/docs/WHITEPAPER.md
+> Read the white paper: https://github.com/AEVentures/littlecures/blob/main/docs/WHITEPAPER.md
 
 ## What to ask people to do
 
@@ -45,6 +45,6 @@ This document has copy and links you can use to invite contributors to LittleCur
 
 ## Notes
 
-- The site is live at https://littlecures.org/. The repository is currently under `plasmaraygun` and can be transferred to an organization later without changing the domain.
+- The site is live at https://littlecures.org/. The repository is under `AEVentures`.
 - All code is MIT licensed. All documentation is public.
 - We do not collect patient data.
