@@ -1,0 +1,30 @@
+# Dependencies
+node_modules
+.pnpm
+.pnpm-store
+
+# Build output
+dist
+dist-ssr
+
+# Logs
+*.log
+logs
+
+# Editor / OS
+.DS_Store
+.vscode
+.idea
+*.swp
+*.swo
+
+# Testing
+coverage
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
