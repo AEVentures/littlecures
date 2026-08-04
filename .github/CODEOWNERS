@@ -1,0 +1,24 @@
+# CODEOWNERS for AEVentures/littlecures
+#
+# These owners are automatically requested for review on any PR that touches
+# matching paths. See:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-security/customizing-your-repository/about-code-owners
+
+# Default: any change requires owner review.
+*                       @plasmaraygun
+
+# Website + build tooling
+/src/                   @plasmaraygun
+/public/                @plasmaraygun
+/index.html             @plasmaraygun
+/vite.config.ts         @plasmaraygun
+/package.json           @plasmaraygun
+/pnpm-lock.yaml         @plasmaraygun
+
+# CI / infrastructure
+/.github/               @plasmaraygun
+
+# Docs — mission, whitepaper, roadmap changes always need owner sign-off.
+/docs/                  @plasmaraygun
+/README.md              @plasmaraygun
+/SECURITY.md            @plasmaraygun

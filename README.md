@@ -1,5 +1,10 @@
 # LittleCures
 
+[![CI](https://github.com/AEVentures/littlecures/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/AEVentures/littlecures/actions/workflows/ci.yml)
+[![Deploy](https://github.com/AEVentures/littlecures/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/AEVentures/littlecures/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Flittlecures.org&label=littlecures.org)](https://littlecures.org)
+
 **Open infrastructure to accelerate cures for children with cancer.**
 
 LittleCures is a public, open-source effort to build shared tools, data, and models for pediatric oncology — starting with the deadliest and most neglected diseases.
