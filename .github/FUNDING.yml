@@ -1,0 +1,13 @@
+# FUNDING.yml — LittleCures
+# Configure the "Sponsor this project" button that appears on the repo.
+# Uncomment and fill in as accounts are created.
+#
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-security/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# github: [AEVentures]                # requires GitHub Sponsors org onboarding
+# open_collective: littlecures         # requires opencollective.com org
+# ko_fi: littlecures                   # requires ko-fi.com account
+# patreon: littlecures                 # requires patreon.com creator
+# tidelift:                            # for maintainer income via package registries
+custom:
+  - https://github.com/AEVentures/littlecures/issues/new?labels=fundraising&template=fundraising.yml

@@ -1,0 +1,43 @@
+name: Fundraising inquiry
+description: Talk to us about funding, partnership, or in-kind support.
+title: "[Fundraising] "
+labels: ["fundraising"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in supporting LittleCures. Please share a bit about you and your organization so we can respond well.
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+    validations:
+      required: true
+  - type: input
+    id: org
+    attributes:
+      label: Organization (optional)
+  - type: input
+    id: email
+    attributes:
+      label: Contact email
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of support
+      options:
+        - Grant / research funding
+        - Corporate donation
+        - Individual donation
+        - In-kind (compute, data, legal, medical expertise)
+        - Foundation partnership
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything you would like us to know
+      placeholder: What drew you to LittleCures? Timeline? Constraints?

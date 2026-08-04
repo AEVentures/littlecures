@@ -27,15 +27,12 @@ export function Contributors() {
       headers: { Accept: 'application/vnd.github+json' },
     })
       .then(async (res) => {
-        if (!res.ok) {
-          throw new Error(`GitHub API responded ${res.status}`);
-        }
+        if (!res.ok) throw new Error(`GitHub API responded ${res.status}`);
         return (await res.json()) as Contributor[];
       })
       .then((data) => {
         if (cancelled) return;
-        const humans = data.filter((c) => c.type === 'User');
-        setContributors(humans);
+        setContributors(data.filter((c) => c.type === 'User'));
       })
       .catch((e: unknown) => {
         if (cancelled) return;
@@ -51,29 +48,33 @@ export function Contributors() {
   }, []);
 
   return (
-    <section className="border-t border-neutral-200 bg-white px-6 py-24">
+    <section id="contributors" className="relative bg-white px-6 py-28">
       <div className="mx-auto max-w-4xl">
-        <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-          Contributors
-        </h2>
-        <p className="mt-4 max-w-2xl text-lg text-neutral-700">
-          Everyone who has committed code, docs, or research to LittleCures.
-          This wall updates automatically. Your face belongs here.
-        </p>
+        <div className="text-center">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-heal-600">
+            The movement
+          </p>
+          <h2 className="font-display text-4xl font-semibold tracking-tight text-ink-800 sm:text-5xl">
+            Every contributor is a step closer to a cure
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-ink-600">
+            This wall updates automatically from GitHub. Your face belongs here.
+          </p>
+        </div>
 
-        <div className="mt-10 min-h-[6rem]">
+        <div className="mt-14 min-h-[8rem]">
           {contributors === null && !error && (
-            <p className="text-neutral-500">Loading contributors…</p>
+            <p className="text-center text-ink-500">Loading contributors…</p>
           )}
 
           {error && (
-            <p className="text-neutral-500">
+            <p className="text-center text-ink-500">
               Could not load contributors right now. See the{' '}
               <a
                 href={siteConfig.repoUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="underline underline-offset-4 hover:text-neutral-900"
+                className="underline underline-offset-4 hover:text-ink-900"
               >
                 repository
               </a>
@@ -82,7 +83,7 @@ export function Contributors() {
           )}
 
           {contributors && contributors.length > 0 && (
-            <ul className="flex flex-wrap gap-4">
+            <ul className="flex flex-wrap justify-center gap-5">
               {contributors.map((c) => (
                 <li key={c.id}>
                   <a
@@ -93,14 +94,14 @@ export function Contributors() {
                     title={`${c.login} — ${c.contributions} commits`}
                   >
                     <img
-                      src={`${c.avatar_url}&s=96`}
+                      src={`${c.avatar_url}&s=128`}
                       alt={`${c.login} avatar`}
-                      width={64}
-                      height={64}
+                      width={72}
+                      height={72}
                       loading="lazy"
-                      className="h-16 w-16 rounded-full border border-neutral-200 transition group-hover:border-neutral-400 group-hover:shadow"
+                      className="h-18 w-18 h-[72px] w-[72px] rounded-full border-2 border-ink-100 transition group-hover:border-hope-400 group-hover:shadow-warm-glow"
                     />
-                    <span className="text-xs text-neutral-600 group-hover:text-neutral-900">
+                    <span className="text-xs font-medium text-ink-600 group-hover:text-ink-800">
                       {c.login}
                     </span>
                   </a>
@@ -110,23 +111,22 @@ export function Contributors() {
           )}
         </div>
 
-        <div className="mt-10 rounded-lg bg-neutral-50 p-6">
-          <h3 className="text-lg font-semibold text-neutral-900">
+        <div className="mt-14 rounded-3xl border border-ink-100 bg-cream p-8 text-center">
+          <h3 className="font-display text-2xl font-semibold text-ink-800">
             Want to join this wall?
           </h3>
-          <p className="mt-2 text-neutral-700">
+          <p className="mx-auto mt-3 max-w-xl text-ink-700">
             Open a pull request — a doc fix, a test, a bug fix, a new component.
-            Every contribution counts. Start with a{' '}
-            <a
-              href="https://github.com/AEVentures/littlecures/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4 hover:text-neutral-900"
-            >
-              good first issue
-            </a>
-            .
+            Every contribution counts.
           </p>
+          <a
+            href="https://github.com/AEVentures/littlecures/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-gradient px-6 py-3 text-sm font-medium text-white shadow-brand-glow transition-transform hover:-translate-y-0.5"
+          >
+            Start with a good first issue →
+          </a>
         </div>
       </div>
     </section>
