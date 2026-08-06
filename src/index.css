@@ -11,6 +11,20 @@ body {
   font-feature-settings: 'ss01', 'cv11';
 }
 
+/* Reveal-on-scroll for sections after the hero. Hidden only when JS is active. */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 300ms ease-out,
+    transform 300ms ease-out;
+}
+
+html.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
 /* Text gradients built from the tailwind config's brand palette. */
 .gradient-text {
   background: linear-gradient(135deg, #0891b2 0%, #10b981 45%, #f59e0b 100%);
@@ -37,6 +51,12 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+
+  html.js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
 
