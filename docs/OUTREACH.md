@@ -2,6 +2,8 @@
 
 This document has copy and links you can use to invite contributors to LittleCures.
 
+Read this in [Español](OUTREACH_ES.md).
+
 ## Live links
 
 - **Website:** `https://littlecures.org/`
