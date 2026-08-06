@@ -13,6 +13,8 @@ type Contributor = {
 const REPO_API =
   'https://api.github.com/repos/AEVentures/littlecures/contributors?per_page=100';
 
+const EXCLUDED_LOGINS = new Set(['plasmaraygun']);
+
 export function Contributors() {
   const [contributors, setContributors] = useState<Contributor[] | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -32,7 +34,11 @@ export function Contributors() {
       })
       .then((data) => {
         if (cancelled) return;
-        setContributors(data.filter((c) => c.type === 'User'));
+        setContributors(
+          data.filter(
+            (c) => c.type === 'User' && !EXCLUDED_LOGINS.has(c.login.toLowerCase())
+          )
+        );
       })
       .catch((e: unknown) => {
         if (cancelled) return;
