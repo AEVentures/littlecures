@@ -5,20 +5,20 @@
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-security/customizing-your-repository/about-code-owners
 
 # Default: any change requires owner review.
-*                       @plasmaraygun
+*                       @AEVentures
 
 # Website + build tooling
-/src/                   @plasmaraygun
-/public/                @plasmaraygun
-/index.html             @plasmaraygun
-/vite.config.ts         @plasmaraygun
-/package.json           @plasmaraygun
-/pnpm-lock.yaml         @plasmaraygun
+/src/                   @AEVentures
+/public/                @AEVentures
+/index.html             @AEVentures
+/vite.config.ts         @AEVentures
+/package.json           @AEVentures
+/pnpm-lock.yaml         @AEVentures
 
 # CI / infrastructure
-/.github/               @plasmaraygun
+/.github/               @AEVentures
 
 # Docs — mission, whitepaper, roadmap changes always need owner sign-off.
-/docs/                  @plasmaraygun
-/README.md              @plasmaraygun
-/SECURITY.md            @plasmaraygun
+/docs/                  @AEVentures
+/README.md              @AEVentures
+/SECURITY.md            @AEVentures
