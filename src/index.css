@@ -58,3 +58,21 @@ body {
   outline: 2px solid #f59e0b;
   outline-offset: 2px;
 }
+
+/* Reveal-on-scroll (#14). Fade + 8px; disabled when reduced-motion. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
